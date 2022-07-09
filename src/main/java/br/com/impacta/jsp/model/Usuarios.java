@@ -22,6 +22,7 @@ public class Usuarios {
     @Column(nullable = false)
     private String nome;
 
+    @NotBlank(message = "Insira um email")
     @Email(message = "Insira um email valido")
     @Column(unique = true, nullable = false)
     private String email;
